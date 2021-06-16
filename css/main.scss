@@ -1,0 +1,903 @@
+@import '../css/veriebel';
+
+@import '../css/section';
+@import '../css/header';
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Space Mono, sans-serif;
+    background: #FFF5EC;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.header-color {
+    background-color: #FE043C;
+    max-width: 400px;
+    width: 100%;
+    height: 150vh;
+    z-index: -3;
+    right: -104px;
+    position: absolute;
+    top: -159px;
+}
+
+
+.btn {
+
+
+    cursor: pointer;
+    padding: 15px 40px;
+    outline: none;
+    border: none;
+    background: $headercolor;
+    color: #ffffff;
+}
+
+.text-24 {
+    font-size: 24px;
+}
+
+
+
+.address {
+
+    position: relative;
+
+    &__img {
+
+        width: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+}
+
+
+.btn {
+    &_mr {
+        border-radius: 60px 0px 0px 0px;
+        position: absolute;
+        left: 258px;
+        top: -22px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 19px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        background: #FE043C;
+    }
+
+    &_rajshahi {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        border-radius: 0px 100px 100px 0px;
+        left: -123px;
+        padding: 10px 40px;
+    }
+
+    &_lakatsi {
+        max-width: 15px;
+
+    }
+}
+
+.btn-boody {
+    .btn_rajshahi {
+        left: -95x;
+
+        padding: 10px 40px;
+
+    }
+}
+
+
+
+
+
+
+// burger
+
+
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+@media (min-width:992.5px) and (max-width:1200px) {
+    .container {
+        max-width: 1140px
+    }
+
+    // food section
+
+
+    .make {
+        &__position-one {
+            width: 100%;
+            max-width: 300px;
+        }
+
+        &__position-tou {
+            top: 214px;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        &__position-three {
+            max-width: 443px;
+        }
+
+        .header-color {
+            max-width: 246px;
+            height: 80vh;
+            z-index: -3;
+            right: -16px;
+
+        }
+    }
+
+    .btn-boody {
+        .btn_rajshahi {
+            left: -16px;
+        }
+    }
+
+    // card-narhlar prise 
+
+    .card {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media (min-width:768.5px) and (max-width:992px) {
+    .container {
+        max-width: 960px
+    }
+
+    .make {
+        &__position-one {
+            width: 100%;
+            max-width: 300px;
+        }
+
+        &__position-tou {
+            top: 214px;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        &__position-three {
+            max-width: 400px;
+        }
+    }
+
+    .boody-header {
+        &__color {
+
+            max-width: 246px;
+
+            height: 100vh;
+            z-index: -3;
+            right: -16px;
+
+        }
+    }
+}
+
+@media (min-width:576.5px) and (max-width:768px) {
+    .container {
+        max-width: 720px
+    }
+
+    // header
+    .header-btn {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .form-header {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+
+        .sidenav {
+
+            text-align: center;
+            background-color: white;
+
+            a {
+                color: $headercolor;
+
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+    }
+
+    //  food section
+    .food {
+        &__title {
+            font-size: 100px;
+        }
+
+        &__text {
+            font-size: 25px;
+            line-height: 32px;
+        }
+    }
+
+    .make {
+        &__position-tou {
+            top: 189px;
+        }
+
+        &__position-three {
+            width: 100%;
+            max-width: 343px;
+            left: 69px;
+        }
+
+        .header-color {
+            background-color: $headercolor;
+            max-width: 216px;
+            width: 100%;
+            height: 750px;
+            z-index: -3;
+            right: -24px;
+            position: absolute;
+            top: -180px;
+        }
+    }
+
+    .btn-boody {
+        .btn_rajshahi {
+            left: -40px;
+            top: 46px;
+            padding: 10px 40px;
+        }
+    }
+}
+
+// card text
+
+.card-befor {
+    gap: 15px;
+
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    &__text {
+
+        font-size: 12px;
+        line-height: 21px;
+
+        margin-top: 20px;
+    }
+}
+
+//    address
+
+.address {
+    .address-wrapper {
+        padding: 20px 20px 9px 21px;
+
+        &__text {
+            margin-top: 10px;
+        }
+
+        .btn-location {
+            cursor: pointer;
+            padding: 10px 13px;
+            top: 128px;
+            background: #ffffff;
+            color: $headercolor;
+        }
+    }
+}
+
+// card-narhlar prise 
+.card {
+    .card-wrapper {
+        max-width: 342px;
+    }
+}
+
+// downlonad-wrapper
+
+.download {
+    .dowlond-img {
+        &__tou {
+            width: 200px;
+            margin-left: -54px;
+            margin-top: 130px;
+        }
+    }
+
+
+    //   footer
+    .footer {
+        .footer-img {
+            opacity: 0.1;
+            top: -98px;
+            right: 237px;
+        }
+
+        .footer-nav {
+            display: block;
+        }
+
+    }
+
+    .network {
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+
+@media (min-width:375px) and (max-width:576px) {
+    .container {
+        max-width: 540px
+    }
+
+    // header
+    .header {
+        .header-icon {
+            width: 100%;
+        }
+
+        .header-btn {
+            display: none;
+        }
+
+        .nav {
+            display: none;
+        }
+
+        .form-header {
+            display: none;
+        }
+
+        .burger {
+            display: block;
+
+            .sidenav {
+
+                text-align: center;
+                background-color: white;
+
+                a {
+                    color: $headercolor;
+
+                    &:hover {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    //  food section
+
+    .food {
+        align-items: center;
+        flex-direction: column;
+        gap: 70px;
+
+        &_mar {
+            margin-top: 0;
+
+            &__title {
+                font-size: 85px;
+            }
+
+            &__text {
+                font-size: 23px;
+                line-height: 21px;
+            }
+
+            .form {
+                .form-input {
+                    padding: 20px 130px 20px 15px;
+                    font-size: 15px;
+                }
+            }
+
+            .btn_mr {
+                left: 230px;
+                font-size: 14px;
+                padding: 13px 32px;
+                top: -15px;
+
+            }
+
+            .make {
+                .position-three {
+                    top: -114px;
+                    max-width: 291px;
+                    left: 157px;
+                }
+
+                &__position-tou {
+                    top: 200px;
+                }
+
+                .header-color {
+                    max-width: 113px;
+                    right: 4px;
+                    height: 100vh;
+                    top: -450px;
+                }
+            }
+        }
+
+        .slideshow {
+            &__left {
+                max-width: 47px;
+                position: absolute;
+                right: 51px;
+            }
+
+            &__right {
+                max-width: 47px;
+
+            }
+        }
+    }
+
+    // card text
+
+    .card-befor {
+        gap: 15px;
+
+        &__title {
+            font-weight: 600;
+            font-size: 24px;
+        }
+
+        &__text {
+
+            font-size: 12px;
+            line-height: 21px;
+
+            margin-top: 20px;
+        }
+    }
+
+    //    address
+
+    .address-mr {
+        display: flex;
+        gap: 30px;
+
+        .address {
+            .address-wrapper {
+                padding: 20px 20px 9px 21px;
+
+                &__text {
+                    margin-top: 10px;
+                }
+
+                .btn-location {
+                    cursor: pointer;
+                    padding: 10px 13px;
+                    top: 128px;
+                    background: #ffffff;
+                    color: $headercolor;
+                }
+            }
+        }
+
+        .line-2 {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    // card-narhlar prise 
+    .card {
+        .card-wrapper {
+            max-width: 342px;
+            justify-content: center;
+        }
+    }
+
+    // downlonad-wrapper
+
+    .download {
+        .download-img {
+            &__one {
+                width: 100%;
+                max-width: 350px;
+                position: absolute;
+                top: 55px;
+                right: -68;
+            }
+
+            &__tou {
+                margin-left: -75px;
+                margin-top: 124px;
+                width: 100%;
+                max-width: 300px;
+            }
+
+
+
+            //   footer
+            .footer {
+                .footer-img {
+                    top: -111px;
+                    max-width: 308px;
+                    position: relative;
+                    right: 121px;
+                    ;
+                }
+
+                .footer-nav {
+                    display: block;
+                }
+
+                .footer-products {
+                    &__title {
+                        font-size: 20px;
+                    }
+
+                }
+
+                .nav {
+                    &__menu {
+                        flex-direction: column;
+                    }
+                }
+            }
+
+            .footer-form {
+                &__search {
+                    padding: 20px 50px 20px 20px;
+                }
+
+                &__btn {
+                    left: 220px;
+                }
+            }
+
+            .network {
+                justify-content: flex-end;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+
+        .btn {
+            &_rajshahi {
+                left: -40px;
+
+                padding: 10px 40px;
+                bottom: 453px;
+            }
+        }
+
+
+
+    }
+
+}
+
+
+
+@media (width:375px) {
+
+    .container {
+        max-width: 350px
+    }
+
+    // header
+    .header-btn {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .form-header {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+
+        .sidenav {
+
+            text-align: center;
+            background-color: white;
+
+            a {
+                color: $headercolor;
+
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+    }
+
+    //  food section
+    .food {
+        &__title {
+            font-size: 100px;
+        }
+
+        &__text {
+            font-size: 25px;
+            line-height: 32px;
+        }
+        .make {
+            &__position-tou {
+                top: 189px;
+            }
+    
+            &__position-three {
+                width: 100%;
+                max-width: 284px;
+                left: 69px;
+            }
+    
+            .header-color {
+             
+                max-width: 166px;
+                top: -468px;
+                max-width: 130px;
+                width: 100%;
+                right: -10px;
+                height: 120vh;
+            }
+            
+        }
+    .form-mar{
+        .form{
+            .form-input{
+                padding: 15px 100px 15px 15px;
+    font-size: 10px;
+            }
+            .btn_mr{
+                left: 162px;
+                font-size: 14px;
+                padding: 7px 26px;
+                top: -8px;
+            }
+        }
+    }
+    }
+
+    
+    .btn-boody {
+        .btn_rajshahi {
+            left: -40px;
+       
+            padding: 10px 40px;
+            bottom: 367px;
+        }
+    }
+
+// services
+.services{
+    .services-wrapper__item{
+        &__item{
+            &__title{
+                font-size: 15px;
+                line-height: 25px;
+                &_befor{
+                    
+                }
+            }
+        }
+    }
+}
+
+
+    // card text
+
+    .card-befor {
+        gap: 15px;
+
+        &__title {
+            font-weight: 600;
+            font-size: 19px;
+        }
+
+        &__text {
+
+            font-size: 12px;
+            line-height: 21px;
+
+            margin-top: 20px;
+        }
+    }
+
+    //    address
+.address-mr{
+    margin: auto;
+    .address {
+        .address-wrapper {
+            padding: 20px 20px 9px 21px;
+
+            &__text {
+                margin-top: 10px;
+            }
+
+            .btn-location {
+                cursor: pointer;
+                padding: 10px 13px;
+                top: 128px;
+                background: #ffffff;
+                color: $headercolor;
+            }
+        }
+    }
+}
+  
+
+    // card-narhlar prise 
+    .card {
+        .card-wrapper {
+            max-width: 342px;
+        }
+    }
+
+
+    // advance
+.advance{
+    .advance-booking{
+        .advance-form{
+            &__item{
+                &_input{
+                    padding: 20px 101px 20px 20px;
+                    box-shadow: 2px 2px 50px 2px #fde5dc;
+                }
+
+                &_btn{
+                   padding: 11px 26px;
+                   border-radius: 0;
+                   top:-18;
+                }
+            }
+        }
+    }
+}
+
+    // downlonad-wrapper
+
+    .download {
+        .dowlond-img {
+            &__tou {
+                width: 200px;
+                margin-left: -54px;
+                margin-top: 130px;
+            }
+        }
+
+
+        //   footer
+
+
+    }
+
+    .network {
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+        margin-top: 36px;
+    }
+
+.footer{
+    .footer-img{
+        top: -101px;
+        width: 300px;
+        height: 500px;
+        max-width: 216px;
+        position: relative;
+        right: 110px;
+        opacity: 0.2;
+    }
+    .footer-form {
+        &__search {
+            padding: 20px 43px 20px 13px;
+        }
+
+        &__btn {
+            left: 220px;
+        }
+    }
+    .footer-nav{
+        display: block;
+        &__menu{
+            flex-direction: column;
+        }
+    }
+    .footer-products{
+        &__title{
+            font-weight: bold;
+            font-size: 17px;
+            line-height: 27px
+        }
+    }
+}
+
+}
