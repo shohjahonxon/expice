@@ -1187,6 +1187,9 @@ a {
   .container {
     max-width: 350px;
   }
+  .header {
+    padding: 15px 0;
+  }
   .header-btn {
     display: none;
   }
@@ -1225,7 +1228,7 @@ a {
     left: 69px;
   }
   .food .make .header-color {
-    top: -468px;
+    top: -650px;
     max-width: 130px;
     width: 100%;
     right: -30px;

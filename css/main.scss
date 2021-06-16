@@ -668,8 +668,12 @@ a {
     }
 
     // header
+    .header{
+        padding: 15px 0;
+    }
     .header-btn {
         display: none;
+        
     }
 
     .nav {
@@ -748,7 +752,6 @@ a {
     .btn-boody {
         .btn_rajshahi {
             left: -40px;
-       
             padding: 10px 40px;
             bottom: 367px;
         }
