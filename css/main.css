@@ -1306,6 +1306,9 @@ a {
     right: 110px;
     opacity: 0.2;
   }
+  .footer .footer-form {
+    display: none;
+  }
   .footer .footer-form__search {
     padding: 20px 43px 20px 13px;
   }
