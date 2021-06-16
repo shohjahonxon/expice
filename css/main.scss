@@ -819,6 +819,7 @@ a {
         .advance-form{
             &__item{
                 &_input{
+                    width: 100%;
                     padding: 20px 101px 20px 20px;
                     box-shadow: 2px 2px 50px 2px #fde5dc;
                 }
@@ -868,8 +869,9 @@ a {
         opacity: 0.2;
     }
     .footer-form {
-        display: none;
+        
         &__search {
+            width: 100%;
             padding: 20px 43px 20px 13px;
         }
 

@@ -3,10 +3,12 @@
 }
 
 .form-mar {
+  width: 100%;
   margin-top: 40px;
 }
 
 .form-mar .form-input {
+  width: 100%;
   border: 2px solid #eeeded;
   padding: 20px 130px 20px 20px;
   font-family: Poppins;
@@ -1273,6 +1275,7 @@ a {
     max-width: 342px;
   }
   .advance .advance-booking .advance-form__item_input {
+    width: 100%;
     padding: 20px 101px 20px 20px;
     -webkit-box-shadow: 2px 2px 50px 2px #fde5dc;
             box-shadow: 2px 2px 50px 2px #fde5dc;
@@ -1306,10 +1309,8 @@ a {
     right: 110px;
     opacity: 0.2;
   }
-  .footer .footer-form {
-    display: none;
-  }
   .footer .footer-form__search {
+    width: 100%;
     padding: 20px 43px 20px 13px;
   }
   .footer .footer-form__btn {
