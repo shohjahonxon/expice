@@ -1177,7 +1177,7 @@ a {
   }
 }
 
-@media (width: 375px) {
+@media (max-width: 375px) {
   .container {
     max-width: 350px;
   }
@@ -1240,10 +1240,6 @@ a {
     left: -40px;
     padding: 10px 40px;
     bottom: 367px;
-  }
-  .services .services-wrapper__item__item__title {
-    font-size: 15px;
-    line-height: 25px;
   }
   .card-befor {
     gap: 15px;
